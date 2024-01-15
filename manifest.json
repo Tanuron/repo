@@ -4,7 +4,7 @@
     "description": "Extension to identifies dark pattern in websites",
     "manifest_version": 3,
     "author": "OGC",
-    "permissions": ["activeTab", "tabs"],
+    "permissions": ["activeTab", "tabs","storage"],
 
     "background": {
         "service_worker": "background.js"
