@@ -1,16 +1,104 @@
-<!-- popup.html -->
 <!DOCTYPE html>
 <html>
+
 <head>
-  <title>Report Button</title>
-  <script src="popup.js"></script>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style>
+        body {
+            margin: 0;
+            padding: 8px;
+            width: 300px;
+            box-sizing: border-box;
+            text-align: center;
+            font-size: 0.85em;
+        }
+
+        @media (prefers-color-scheme: dark) {
+            body {
+                color: white;
+                background: rgb(27, 27, 35);
+            }
+        }
+
+        h1 {
+            font-weight: bold;
+            text-align: center;
+        }
+
+        /* Style for the square container */
+        .container {
+            border: 1px solid #007BFF; /* Add border around the container */
+            padding: 10px; /* Add padding for better appearance */
+            margin: 8px auto; /* Center the container horizontally */
+        }
+
+        /* Style for checkboxes */
+        .checkbox-container {
+            text-align: left; /* Align checkboxes to the left within the container */
+        }
+
+        input[type="checkbox"] {
+            margin-right: 5px;
+            border: none; /* Remove border from individual checkboxes */
+            padding: 5px; /* Add padding for better appearance */
+            margin-bottom: 5px; /* Add margin between checkboxes */
+        }
+
+        /* Style for the "Report" button */
+        button {
+            border: none; /* Remove border from the button */
+            padding: 10px; /* Add padding for better appearance */
+            margin-top: 8px; /* Add margin above the button */
+            background-color: #c5c6c8; /* Add background color to the button */
+            color: rgb(22, 21, 21); /* Set text color to white */
+            cursor: pointer; /* Change cursor to pointer on hover */
+            transition: background-color 0.3s ease; /* Add transition for smooth effect */
+        }
+
+        /* Style for button press effect on hover */
+        button:hover {
+            background-color: #636465; /* Darker color to simulate button press */
+        }
+
+        /* Style for the link */
+        p {
+            margin-top: 10px; /* Add top margin to the paragraph */
+        }
+
+        a {
+            color: #007BFF; /* Blue color for links */
+            text-decoration: none;
+        }
+    </style>
+    <script type="module" src="popup.js"></script>
 </head>
-  <style>
-    font-size:20px;
-    font-style:italic;
-    background-color:gray;
-  </style>
+
 <body>
-  <button id="reportButton">Report</button>
+    <h1>Dark Pattern</h1>
+
+    <!-- "Turn On" button -->
+    <button id="onOffButton">Turn On</button>
+
+    <!-- Square container for checkboxes and the "Report" button -->
+    <div class="container">
+        <!-- Checkboxes for different patterns -->
+        <div class="checkbox-container">
+            <div><label><input type="checkbox" id="countdownCheckbox"> Countdown</label></div>
+            <div><label><input type="checkbox" id="scarcityCheckbox"> Scarcity</label></div>
+            <div><label><input type="checkbox" id="socialProofingCheckbox"> Social Proofing</label></div>
+            <div><label><input type="checkbox" id="forcedContinuityCheckbox"> Forced Continuity</label></div>
+        </div>
+
+        <!-- "Report" button -->
+        <button id="reportButton">Report</button>
+    </div>
+    <!-- Label for the link -->
+ <p>For more information:</p>
+
+    <!-- Link for more information -->
+    <p><a href="report.html" target="_blank">Click here</a></p>
 </body>
-</html>
+
+</html
+ 

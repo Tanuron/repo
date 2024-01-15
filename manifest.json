@@ -1,25 +1,25 @@
 {
-    "name": " OGC Dark Pattern",
-    "version": "1.0.0",
-    "description": "Extension to identifies dark pattern in websites",
-    "manifest_version": 3,
-    "author": "OGC",
-    "permissions": ["activeTab", "tabs","storage"],
+  "name": " OGC Dark Pattern",
+  "version": "1.0.0",
+  "description": "Extension to identifies dark pattern in websites",
+  "manifest_version": 3,
+  "author": "OGC",
+  "permissions": ["activeTab", "tabs","storage"],
 
-    "background": {
-        "service_worker": "background.js"
-      },
-      "content_scripts": [
-      {
-        "matches": ["<all_urls>"],
-        "js": ["content.js"]
-      }
-    ],
-    "action": {
-        "default_icon": {                
-          "16": "image/dp.png"
-        },
-        "default_popup": "popup.html",
-        "default_title": "Dark Pattern Identifier"
-      }
+  "background": {
+      "service_worker": "background.js"
+    },
+    "content_scripts": [
+    {
+      "matches": ["<all_urls>"],
+      "js": ["content.js"]
     }
+  ],
+  "action": {
+      "default_icon": {                
+        "16": "image/dp.png"
+      },
+      "default_popup": "popup.html",
+      "default_title": "Dark Pattern Identifier"
+    }
+  }
